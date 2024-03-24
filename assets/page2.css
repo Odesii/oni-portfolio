@@ -231,7 +231,8 @@ top: 60vh;
     width:100%; /*Image will fill the button */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) 
+{
   header, #about, #goods, #links {
     padding: 0.5rem;
     max-width: 100%;
@@ -258,7 +259,6 @@ top: 60vh;
     margin: 10px 0; /* Add some vertical margin for spacing between links */
     text-align: center; /* Center text */
   }
-}
   #css, #html {
     position: static; /* Change to static or relative for better control */
     width: 20%; /* Adjust width to fit smaller screens */
