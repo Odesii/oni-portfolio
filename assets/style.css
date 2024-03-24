@@ -1,0 +1,58 @@
+
+/* 
+Set a gradient for the background
+and sets the body as a flex container to set elements postions  
+ */
+body {
+    background: radial-gradient(#000000, #161513);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spinner {
+    height: 100px;
+    width: 100px;
+    border: 10px solid #c9c9c9;
+    border-color: rgba(123, 80, 143, 0.5) transparent;
+    border-radius: 50%;
+    animation: spin 1.3s ease-in-out infinite ;
+}
+/* sets a 360 rotationg fro 'loading' spinner */
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
+a {
+    color: #0fb0f00c;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+}
+/* gives a highlight and glow*/
+a:hover {
+    /* background: #0fb0f0; */
+    color: #fff;
+    transition: font-size 0.3s;
+    font-size: 15px;
+}
+
+.glow{
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+

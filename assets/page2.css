@@ -1,0 +1,232 @@
+:root {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  --color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #161513;
+  /* sets the subtle lines in the background */
+  background-image: repeating-linear-gradient(
+      to right,
+      #f0f0f009,
+      #f0f0f00a 1px,
+      transparent 1px,
+      transparent 275px
+  );
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* makes the scroll bars in chrome match the website colors */
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #a689fdbb;
+}
+
+body::-webkit-scrollbar-track {
+  background: #08191e;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #be7cce;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  padding: 1rem; /* Space around header content */
+}
+
+.header h1 {
+  color: #fff;
+  font-size: 5vw;
+  font-style: oblique;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  text-shadow: .05em 0 0 rgba(255, 0, 0), -.025em 0.05em 0 rgb(0, 255, 0), .025em 0.05em 0 rgba(0, 0, 255);
+  animation: glitch 450ms infinite;
+}
+@keyframes glitch{
+  0%{    text-shadow:
+      .05em 0 0 rgba(255, 0, 0),
+      -.025em 0.05em 0 rgb(0, 255, 0),
+      .025em 0.05em 0 rgba(0, 0, 255);}
+  14%{    text-shadow:
+      .05em 0 0 rgba(255, 0, 0),
+      -.025em 0.05em 0 rgb(0, 255, 0),
+      .025em 0.05em 0 rgba(0, 0, 255);}
+  15%{    text-shadow:
+      .05em -0.025em 0 rgba(255, 0, 0),
+      .025em 0.025em 0 rgb(0, 255, 0),
+      -.05em -0.05em 0 rgba(0, 0, 255);}
+  49%{    text-shadow:
+      .05em -0.025em 0 rgba(255, 0, 0),
+      .025em 0.025em 0 rgb(0, 255, 0),
+      -.05em -0.05em 0 rgba(0, 0, 255);}
+
+  50%{    text-shadow:
+      .025em -.025em 0 rgba(255, 0, 0),
+      .05em 0 0 rgb(0, 255, 0),
+      0 -0.05em 0 rgba(0, 0, 255);}
+  99%{    text-shadow:
+      .025em -.025em 0 rgba(255, 0, 0),
+      .05em 0 0 rgb(0, 255, 0),
+      0 -0.05em 0 rgba(0, 0, 255);}
+  100%{    text-shadow:
+      -.025em 0 0 rgba(255, 0, 0),
+      -.025em 0.025em 0 rgb(0, 255, 0),
+      -.025em -0.05em 0 rgba(0, 0, 255);}
+  }
+
+.header img {
+  width: 8rem;
+  height: auto;
+}
+.header img:hover{
+  transition: transform 0.5s ease-in-out;
+  transform: scale(2,2);
+  z-index: 1;
+}
+
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem; /* Adjusted spacing */
+  width: 100%;
+}
+
+.nav-bar a {
+  color: #fff;
+  font-size: 20px;
+  font-style: oblique;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-decoration: none;
+  margin: 0 1rem; /* Adjust spacing between nav items */
+}
+
+.glow{
+  animation: glow 300ms ease-in-out infinite alternate;
+}
+/* sets frames for glow effect like neon lights */
+@keyframes glow {
+  from {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+
+}
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #48065c31;
+  color: #ffffff;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+#about, #goods, #links, #html, #css{
+  position: relative; 
+}
+#about {
+  max-width: 500px;
+}
+#goods {
+  max-width: 800px;
+}
+#goods img{
+  position: relative;
+  left: 4rem;
+  width: 80%;
+  height: auto;
+}
+#goods a img:hover {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.2,1.2);
+  z-index: 1;
+}
+#goods figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#css, #html {
+  position: absolute;
+  width: 25%;
+  height: auto;
+}
+#css {
+  left: 11%;
+  top: 25%;
+  transform: rotate(-45deg);
+}
+#html{
+  right: 11%;
+  top: 15%;
+  transform: rotate(45deg);
+}
+#links {
+  max-width: fit-content;
+top: 60vh;
+}
+
+
+.image-button {
+    display: block;
+    border: 5px solid #67c6f1;
+    background: radial-gradient(circle, #67c6f1, #67c6f1b3);
+    margin: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    position: relative; /* Ensures the button is properly positioned for the shadow */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.image-button:hover, 
+.image-button:focus {
+    animation: pulse 1s infinite; /* Makes the pulse effect repeat */
+    box-shadow: 0 0 0 0 rgba(62, 148, 206, 0.7); /* Initial state of the shadow */
+}
+/* keyframes to set pulse */
+@keyframes pulse {
+    0%, 100% { 
+        box-shadow: 0 0 0 0 #67c6f1b3;
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0); 
+    }
+}
+
+.image-button img {
+    width:100%; /*Image will fill the button */
+}
