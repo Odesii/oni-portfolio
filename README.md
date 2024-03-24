@@ -12,8 +12,12 @@
     https://github.com/Odesii/oni-portfolio
 
 ## Screen Shots
-    ![alt text](https://imgur.com/pJVX6Lo)
-    ![alt text](https://imgur.com/vDOTvEy)
+    Phone Screen
+![Sub 600px Phone Screen](./assets/images/Screenshots/sub600px.png)
+
+
+    Monitor
+![1920x1080px Big Screen](./assets/images/Screenshots/1920x1080.png)
 
 ## Credit
 
