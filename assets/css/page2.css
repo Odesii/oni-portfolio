@@ -16,8 +16,7 @@ body {
     #f0f0f009,
     #f0f0f00a 1px,
     transparent 1px,
-    transparent 275px
-  );
+    transparent 275px);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -67,7 +66,7 @@ header {
 @keyframes glitch {
   0% {
     text-shadow: 0.05em 0 0 rgba(255, 0, 0), -0.025em 0.05em 0 rgb(0, 255, 0),
-      0.025em 0.05em 0 rgba(0, 0, 255);
+      0.025em 0.04em 0 rgba(0, 0, 255);
   }
   14% {
     text-shadow: 0.05em 0 0 rgba(255, 0, 0), -0.025em 0.05em 0 rgb(0, 255, 0),
@@ -153,14 +152,12 @@ section {
   width: 90%;
   box-sizing: border-box;
 }
-
-#about,
-#goods,
-#links,
-#html,
-#css {
-  position: relative;
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: #ff07ff 1px 1px 0;
 }
+
 #about {
   max-width: 500px;
 }
@@ -184,29 +181,26 @@ section {
   align-items: center;
   flex-direction: column;
 }
-#css,
-#html {
+
+#css-img,
+#html-img {
   position: absolute;
   width: 25%;
   height: auto;
 }
-#css {
+#css-img {
   left: 11%;
   top: 25%;
   transform: rotate(-45deg);
 }
-#html {
+#html-img {
   right: 11%;
   top: 15%;
   transform: rotate(45deg);
 }
-#links {
-  max-width: fit-content;
-  top: 60vh;
-}
 
 .image-button {
-  display: block;
+  display:inline-block;
   border: 5px solid #67c6f1;
   background: radial-gradient(circle, #67c6f1, #67c6f1b3);
   margin: 10px;
@@ -277,4 +271,48 @@ section {
     margin: 0 auto; /* Center the elements */
     transform: none; /* Remove rotations */
   }
+}
+/* a flex box container to readjust the orientation of linked sections
+making them appear in a row  under the main portfolio piece 'the goods'  */
+.rise-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+
+}
+.rise {
+  flex: 1;
+  max-width: 350px;
+}
+  .rise img {
+    width: 100%;
+    height: auto;
+}
+.rise img:hover {
+  animation: rise 0.5s ease-in-out infinite;
+}
+@keyframes rise {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #48065c31;
+  color: #ffffff;
+  border-top: 1px solid #be7cce;
 }

@@ -2,24 +2,40 @@
 
 ## Description
 
-    Built a portfolio web page.
-    Used this a a testing ground for experimenting with CSS.
+    Built a portfolio web page using css/html
+    This was a testing ground for experimenting with CSS.
     Making different animation types using key frames and shadows. 
-    I had alot of ideas for this project and learned.
-
-
+    
 ##  Link
-    https://github.com/Odesii/oni-portfolio
+[Live Page](https://odesii.github.io/oni-portfolio/)
+
+## Table Of Content
+
+**1.[Technologies](#technologies)**
+
+**2.[Screen-shots](#screen-shots)**
+
+## Technologies
+### Html
+### CSS
+
 
 ## Screen Shots
-    Phone Screen
+
+**Mobil**
+
 ![Sub 600px Phone Screen](./assets/images/Screenshots/sub600px.png)
 
+**Monitor**
 
-    Monitor
 ![1920x1080px Big Screen](./assets/images/Screenshots/1920x1080.png)
+
+
+## Contact
+
 
 ## Credit
 
-    Github supplied logo.
+Github supplied logo.
+[Github Logo](https://github.com/logos)
 

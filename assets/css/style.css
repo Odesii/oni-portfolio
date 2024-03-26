@@ -26,7 +26,7 @@ body {
 }
 
 a {
-    color: #0fb0f00c;
+    color: rgba(187, 187, 187, 0.774);
     text-decoration: none;
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
@@ -40,7 +40,7 @@ a:hover {
     /* background: #0fb0f0; */
     color: #fff;
     transition: font-size 0.3s;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .glow{
@@ -53,6 +53,10 @@ a:hover {
     }
     to {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+    to{
+    transition: font-size 0.3s;
+    font-size: 12px;
     }
 }
 
